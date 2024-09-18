@@ -128,9 +128,12 @@ classdef hw01
             %
             % Findings:
             %
-            % For different trial set of numbers in x, the Kahan summation and the
+            % Among different trial set of numbers in x, the Kahan summation and the
             % built in summation function sum() under single precision gave the same
-            % answer
+            % answer for most cases and a slightly different for ver few
+            % cases. Cound not tell which one is more accurate, although
+            % Khar summation should be given matlab's sum suffers floating
+            % point roundoff errors. 
 
             single_a = single(a); % Convert a to single precision
             s = hw01.p3(a); % Kahan sum of a under double precision (regarded as truth).
