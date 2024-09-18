@@ -10,6 +10,9 @@ hw_assert(hw01_worker.p3([1, 2, 3]) == 6);
 hw_assert(hw01_worker.p3([eps, -eps]) == 0);
 
 
+n = 4;
+hw01_worker.p4(rand(n,1));
+
 function hw_assert(X)
     if X; fprintf('\t PASS\n'); else; fprintf('\t FAIL\n'); end
 end
